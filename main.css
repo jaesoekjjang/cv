@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  word-break: keep-all;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  padding-bottom: 2rem;
+}
+
+section {
+  padding: 0 2rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 4rem 0 2rem 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+h4 {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+ul {
+  padding: 0 0 0 1.3rem;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+ul > li {
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  padding: 3rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.row-left {
+  flex-basis: 18rem;
+  padding-right: 1rem;
+  flex-shrink: 0;
+}
+
+.row-right {
+  flex-grow: 1;
+}
+
+.skill {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.project {
+  padding: 1.5rem 0;
+}
+
+.project:first-child {
+  padding-top: 0;
+}
+
+.time {
+  display: block;
+  margin-bottom: 1.5rem;
+}
