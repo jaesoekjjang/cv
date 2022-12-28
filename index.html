@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <section>
+      <section class="about-me">
         <h1>이재석</h1>
         <h2>About me.</h2>
         <p>
@@ -35,10 +35,13 @@
         </p>
       </section>
       <section>
-        <h2>Project.</h2>
+        <h2>Team Project.</h2>
         <div class="row">
           <div class="row-left">
-            <h3>듀오해듀오</h3>
+            <h3 class="project-title">
+              <a href="https://duoduo.lol/" target="_blank">듀오해듀오</a>
+              <span class="link-emoji">🔗</span>
+            </h3>
             <div class="role">Frontend Developer</div>
             <div>
               <time datetime="2022-06">2022. 06</time> -
@@ -57,7 +60,11 @@
                   유저 프로필 / 매너 평가 / 마이 페이지 / 회원 탈퇴 / 채팅
                   페이지 개발
                 </li>
-                <li>비속어 필터, Typing Indicator 등 채팅 기능 고도화</li>
+                <li>
+                  비속어 필터, Typing Indicator, Day Divider, 새 메시지 알림 탭,
+                  간편 채팅 등 채팅 기능 고도화
+                </li>
+                <li>React Portal과 Custom Hooks를 사용해 공통 모달 개발</li>
                 <li>프론트엔드 서버 배포</li>
                 <li>
                   AWS, Github Actions, Jira를 연동해 배포 및 프로젝트 관리
@@ -79,7 +86,7 @@
               </ul>
               <h4>사용 기술</h4>
               <ul>
-                <li>Typescript, Next.js, emotion.js, react-query</li>
+                <li>Typescript, Next.js, Emotion, React Query</li>
                 <li>AWS S3, EC2, Github Actions, Nginx</li>
                 <li>Jira, Notion</li>
               </ul>
@@ -88,7 +95,12 @@
         </div>
         <div class="row">
           <div class="row-left">
-            <h3>Woori Silok</h3>
+            <h3 class="project-title">
+              <a href="https://github.com/woori-silok/project" target="_blank"
+                >Woori Silok</a
+              >
+              <span class="link-emoji">🔗</span>
+            </h3>
             <div class="role">Frontend Developer</div>
             <div>
               <time datetime="2021-10">2021. 10</time> -
@@ -122,9 +134,79 @@
               </ul>
               <h4>사용 기술</h4>
               <ul>
-                <li>Typescript, React.js, emotion.js, MUI</li>
+                <li>Typescript, React.js, Emotion, MUI</li>
                 <li>AWS S3, Github Actions</li>
                 <li>Slack, Google Meet, SwaggerHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <h2>Personal Project.</h2>
+        <div class="row">
+          <div class="row-left">
+            <h3 class="project-title">
+              <a href="https://jaesoekjjang.github.io/doodler/" target="_blank"
+                >Doodler</a
+              >
+              <span class="link-emoji">🔗</span>
+            </h3>
+            <div>
+              <time datetime="2022-02">2022. 02</time> -
+              <time datetime="2022-04">2022. 04</time>
+            </div>
+          </div>
+          <div class="row-right">
+            <div class="project">
+              <h4>설명</h4>
+              <p>웹 게임 갈틱폰의 솔로모드 클론 코딩</p>
+              <h4>결과</h4>
+              <ul>
+                <li>페인트 통, 뒤 / 앞으로 가기, 도형 그리기 알고리즘 개발</li>
+                <li>
+                  기본 Array 대신 Queue 클래스를 작성해 페인트 통 성능 향상
+                </li>
+                <li>Tailwind CSS 학습</li>
+              </ul>
+              <h4>사용 기술</h4>
+              <ul>
+                <li>HTML5 canvas, Typescript, React.js, Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row-left">
+            <h3 class="project-title">
+              <a href="https://jaesoekjjang.github.io/doodler/" target="_blank"
+                >My UI Collection</a
+              >
+              <span class="link-emoji">🔗</span>
+            </h3>
+            <div>
+              <time datetime="2022-02">2022. 02</time> -
+              <time datetime="2022-04">2022. 04</time>
+            </div>
+          </div>
+          <div class="row-right">
+            <div class="project">
+              <h4>설명</h4>
+              <p>라이브러리 없이 나만의 UI 컴포넌트 구현하기</p>
+              <h4>결과</h4>
+              <ul>
+                <li>CSS 애니메이션, 트랜지션, SVG 학습</li>
+                <li>
+                  <span class="code">requestAnimationFrame()</span>을 사용해
+                  애니메이션 최적화
+                </li>
+                <li>StoryBook으로 컴포넌트 분리</li>
+                <li>
+                  Carousel, Modal, Toast와 같은 복잡한 UI의 동작 원리 이해
+                </li>
+              </ul>
+              <h4>사용 기술</h4>
+              <ul>
+                <li>Typescript, React.js, Three.js, Styled Component</li>
+                <li>StoryBook</li>
               </ul>
             </div>
           </div>
@@ -133,7 +215,7 @@
       <section>
         <h2>Skills.</h2>
         <div class="skill">
-          <h3>Communication.</h3>
+          <h3>Communication</h3>
           <ul>
             <li>항상 겸손한 자세를 유지하며, 피드백을 적극 수용합니다.</li>
             <li>지식을 나누는 것을 좋아합니다.</li>
@@ -141,19 +223,30 @@
           </ul>
         </div>
         <div class="skill">
-          <h3>Web.</h3>
+          <h3>Web</h3>
           <ul>
             <li>Search Engine Optimization 경험이 있습니다.</li>
             <li>웹 성능을 측정하고 최적화해본 경험이 있습니다.</li>
           </ul>
         </div>
         <div class="skill">
-          <h3>JavaScript.</h3>
+          <h3>JavaScript</h3>
           <ul>
             <li>JavaScript와 TypeScript에 능숙합니다.</li>
             <li>
               모듈 시스템에 대해서 이해하고 있으며 번들러를 활용할 수 있습니다.
             </li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Tech Stack</h3>
+          <ul>
+            <li>Language: *Javascript, Typescript, HTML5, CSS3</li>
+            <li>
+              Library: *React.js, Next.js, Recoil, React Redux, React Query,
+              Emotion
+            </li>
+            <li>Tools: Git, Jira, Figma</li>
           </ul>
         </div>
       </section>
@@ -164,8 +257,14 @@
           <li>Email: ljs981120@gmail.com</li>
           <li>
             Github:
-            <a href="https://github.com/jaesoekjjang"
+            <a href="https://github.com/jaesoekjjang" target="_blank"
               >https://github.com/jaesoekjjang</a
+            >
+          </li>
+          <li>
+            Blog:
+            <a href="https://seukjjang.tistory.com/" target="_blank"
+              >https://seukjjang.tistory.com/</a
             >
           </li>
         </ul>
