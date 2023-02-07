@@ -29,12 +29,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  margin: 4rem 0 2rem 0;
+  font-size: 2.6rem;
+  margin: 3rem 0 1.5rem 0;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0 0 1rem 0;
 }
 
@@ -75,10 +75,18 @@ a:focus {
   margin: auto;
 }
 
+.about-me {
+  padding: 1.5rem 0;
+}
+
 .row {
   display: flex;
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   border-bottom: 1px solid #eeeeee;
+}
+
+.row:last-child {
+  border: none;
 }
 
 .row-left {
@@ -89,6 +97,10 @@ a:focus {
 
 .row-right {
   flex-grow: 1;
+}
+
+.project-title .link-emoji {
+  font-size: 1.3rem;
 }
 
 .project {
@@ -107,12 +119,18 @@ a:focus {
 
 .skill {
   padding: 2rem 0;
+}
+
+.skill {
   border-bottom: 1px solid #eeeeee;
 }
 
-.time {
-  display: block;
-  margin-bottom: 1.5rem;
+.skill:last-child {
+  border: none;
+}
+
+.education .time {
+  margin-bottom: 1rem;
 }
 
 .project-title {
@@ -121,6 +139,17 @@ a:focus {
   white-space: nowrap;
 }
 
-h3 .link-emoji {
-  font-size: 1.3rem;
+@media screen and (max-width: 680px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .row-left {
+    flex: 0;
+  }
 }
