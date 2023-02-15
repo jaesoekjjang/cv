@@ -139,6 +139,13 @@ a:focus {
   white-space: nowrap;
 }
 
+.notice {
+  position: relative;
+  top: -10px;
+  color: #f82626;
+  font-size: 0.9rem;
+}
+
 @media screen and (max-width: 680px) {
   body,
   html {
